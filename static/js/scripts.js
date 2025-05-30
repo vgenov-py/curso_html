@@ -26,7 +26,28 @@ const dogs = ["Kuga", "Pipi", "Simón", "Kira"];
 // }
 
 // console.log(i);
+function list() {
+    for (let dog of dogs) {
+        console.log(dog);
+    }
+}
 
-for (let dog of dogs) {
-    console.log(dog.toUpperCase());
+// list()
+// const nums = [1,2,3,4];
+
+// for (let num of nums) {
+//     if(num % 2 == 0) {
+//         console.log(num);
+//     }
+// }
+
+function filterByLetter() {
+
+    const inputLetter = document.querySelector("#filter");
+    
+    for (let dog of dogs) {
+        if (dog[0].toUpperCase() == inputLetter.value.toUpperCase()) {
+            console.log(dog);
+        }
+    }
 }
