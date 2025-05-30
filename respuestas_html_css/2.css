@@ -1,0 +1,103 @@
+body {
+  background-color: #f0f8ff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.parrafo {
+  color: #333;
+  font-size: 18px;
+}
+
+.imagen-estilizada {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.boton-hover {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.boton-hover:hover {
+  background-color: #005f5f;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.lista-inline {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-inline li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#grid-ejemplo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.flex-ejemplo {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.animacion-hover {
+  width: 200px;
+  height: 50px;
+  background-color: #ffcc00;
+  text-align: center;
+  line-height: 50px;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.animacion-hover:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #ffe4e1;
+  }
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.columna {
+  flex: 1;
+  border: 1px solid #999;
+  padding: 10px;
+}
